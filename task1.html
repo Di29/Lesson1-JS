@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+</head>
+<body>
+  Content of the document......
+  <script type="text/javascript">
+    num = parseInt(prompt("Write a number: "));
+    function numReverser(num) {
+      let result = 0;
+      while (num) {
+        result = result * 10 + num % 10;
+        num = Math.floor(num / 10);
+      }
+
+      return result;
+    }
+
+console.log(numReverser(num));
+
+    alert('Vice versa: ' + numReverser(num));
+
+  </script>
+
+</body>
+</html>
